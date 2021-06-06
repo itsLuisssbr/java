@@ -1,0 +1,5 @@
+package tiposdeclasseemaissobreoo;
+
+public abstract class TesteAbstract {
+
+}

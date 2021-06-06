@@ -1,0 +1,24 @@
+package tiposdeclasseemaissobreoo;
+
+public class Main {
+	
+		public static void main(String[] args) {
+			Player player = new Player();
+			Player player2 = new Player();
+			Enemy enemy = new Enemy();
+			player.iniciarJogador();
+			player2.iniciarJogador();
+			new Player().iniciarJogador();
+			enemy.iniciarInimigo();
+			
+		}
+		public void instanceMain2() {
+			new Main2();
+		}
+		
+		class Main2{
+			public void print() {
+				System.out.println("Chamando esse método");
+			}
+		}
+}

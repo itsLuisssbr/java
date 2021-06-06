@@ -1,0 +1,6 @@
+package aulainterface;
+
+public interface MinhaInterface {
+	public void carregar();
+	public abstract void teste();
+}

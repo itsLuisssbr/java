@@ -1,0 +1,7 @@
+package exercicioparafixaroo;
+
+public class Enemy {
+	private int vida  =5;
+	
+	
+}

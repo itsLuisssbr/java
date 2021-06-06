@@ -1,0 +1,21 @@
+package tudosobremetodos;
+
+public class Main {
+		
+	public static void exemplo() {
+		
+	}
+	public void exemploOutro() {
+		
+	}
+		public static void main(String[] args) {
+			Player player = new Player();
+			Player2 player2 = new Player2();
+			Enemy enemy = new Enemy();
+			player.nascer();
+			player2.outroMetodo();
+			
+			
+		}
+		
+}

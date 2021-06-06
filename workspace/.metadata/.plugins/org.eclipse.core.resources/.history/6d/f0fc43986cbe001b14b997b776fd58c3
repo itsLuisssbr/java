@@ -1,0 +1,10 @@
+package exercicioparafixaroo;
+
+public class Game {
+
+	private Player player;
+	private Enemy enemy;
+	public static void main(String[] args) {
+			
+	}
+}

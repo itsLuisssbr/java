@@ -1,0 +1,204 @@
+O que é orientação a objetos:
+é uma forma de melhor organização do nosso programa, ao se criar uma lógica mais fácil de se trabalhar. ELa consiste no uso de classes, com métodos e atributos.
+Ela é uma forma profissional, pois permite uma melhor manutenção do código
+
+Objeto/Classe: exemplo: Jogador
+ele possui atributos, como vida, velocidade, skill
+e métodos, como atacar(), ganharVida(), perderVida(), etc.
+
+Criando classes em java:
+O método principal deve estar necessáriamente em qualquer uma das classes
+
+Para fazermos classes interagirem entre si, ou seja, utilizar métodos de outras classes, devemos instanciar (iniciar) as classes, criando assim uma variável nova.
+Fazemos isso assim:
+nomeDaClasse nomedoobjeto = new nomeDaClasse (atributos);
+após fazer isso, podemos utilizar métodos específicos dessa classe por meio da seguinte sintaxe:
+
+Podemos ter 2 objetos de uma mesma classe, como por exemplo, ter 2 jogadores, que embora possuam os mesmos métodos, são diferentes, podendo ter vida, velocidade, níveis diferentes.
+
+Podemos também utilizar um método sem instanciá-lo utilizando o comando:
+new nomedaclasse().nomedométodo;
+
+
+Tipos de classes e mais sobre oo:
+maneiras diferentes de se criar uma classe:
+podemos criar classes dentro de outras classes (inner classes), e para instanciar essa classe devemos criar uma função auxiliar para poder instanciá-la, como visto no código referente a aula
+
+classes abstratas:
+
+declaração: 
+abstract nomedaclasse
+nela são declarados métodos
+Ela não pode ser instanciada, e por isso, para podermos utilizar os métodos dela devemos utilizar o extends.
+
+extends:
+
+public classe1 extends classe2{
+}
+Isso faz com que todos os métodos da classe 2 seja herdados para a classe 1, sem a necessidade de instanciar.
+
+this: quando usamos essa palavra em java, fazemos referência a todos os métodos e atributos presentes na classe (e também na classe estendida) 
+
+Interface: ela é chamada para a classe por meio do comando implements, e note que, diferente de outras classes, podemos ter herança múltipla de interfaces. 
+
+A interface serve para declararmos métodos, mas não podemos colocar comandos nela, e assim, ao implementar a interface em alguma classe, ela é obrigada a utilizar os métodos da interface, agora colocando comandos dentro deles.
+
+Também podemos declarar os métodos da interface como abstratos (pelo que eu vi n muda nada, mas funciona)
+
+Tudo sobre métodos: um método é um trecho que código que executa uma ação e retorna (ou não) um valor.
+
+public: podemos acessar esse método de qualquer arquivo quando instanciamo a classe pertencente a ela
+private: métodos com esse atributo só podem ser acessados pela classe em si, mesmo que o objeto seja instanciado e também para classes filhas (extends)
+protected: o método é privado para outras classes, mas pode ser acessado por classes filhas (extends)
+static: quando declaramos um método ou variável como static, o método se torna estáticou, ou seja, independente, por causa disso, não podemos acessar diretamente métodos da mesma classe se o método que quer o acesso seja o static, como visto no exemplo;
+
+public void a(){
+
+}
+
+public static void b(){
+	a();
+}
+isso é inválido.
+
+Assim somos obrigados a instanciar a própria classe dentro de um método static para podermos utilizar outros métodos, já que eles não estão mais diretamente relacionados
+
+Para chamar métodos estáticos, colocamos o nomedaclasse.metodo(), de forma direta, sem a necessidade de instanciar a classe. 
+
+Entretanto, se esse método estático está na mesma classe, podemos chamar ele usando somente o seu nome
+
+public static void a(){
+
+}
+public static void b(){
+	Main.a();
+	a();
+}
+
+Nesse caso, ambas as formas estão corretas]]
+
+Também podemos tornar uma classe estática privada, que nesse caso, ainda é utilizável por métodos da mesma classe, é inacessível por outros métodos de outras classes.
+
+Além disso, por causa do método ser estático, ele é o mesmo para objetos diferentes, ou seja, se tivermos dois objetos da classe Player, eles compartilharão o mesmo método static, assim ele é independente de instâncias da classe.
+
+void: quando utilizamos void, queremos dizer que o método não retornará nenhum valor. 
+
+Podemos fazer métodos retornarem valores ao instanciá-los com um tipo primitivo:
+public int metodo(){
+	//esse metodo devera retornar um inteiro
+}
+retornamos o valor de um método por meio do comando return valor;
+
+Também podemos passar parâmetros para um método, da mesma forma:
+
+public void metodo(int x, float y, String z, char a){
+
+}
+
+e então, ao chamar esse método, devemos colocar todos esses parâmetros, caso contrário teremos um erro de compilação. 
+
+metodo(parametros);
+
+podemos ver que o public static void main possui argumentos, que podem ser passador quando executamos o programa java no terminal, entretanto eles são raramente usados. 
+também podemos passar arrays em métodos, e quando escrevemos apenas o nome dela (sem o índice), passamos todos os índices da array, entretanto, na decalração do método temos que escrever:
+
+
+public void metodo(int[] n1){
+
+}
+public void outrometodo(){
+	int[] n1 = new int[10];
+	metodo(n1);
+
+} 
+
+Atributos e método construtor:
+método construtor: toda vez que instanciamos uma variável (utilizando a palavra new), executamos o método constutor dela.
+método construtor: é feito da seguinte porma:
+public nomedaclasse(){
+
+}
+
+atributo: são variáveis pertencente a classe (escopo global). Elas também podem ser public, static, private, protected, etc. 
+Eles podem ser declarados e serem inicializados dentro de métodos
+
+Geralmente esses atributos se relacionam com métodos por meio de getters e setters
+
+getter: é um método que retorna um atributo privado:
+private int val = 10;
+
+public int getVal(){
+return val;
+}
+
+também podemos usar setters:
+private int val = 10;
+public int setVal(int val){
+this.val = val;
+}
+
+
+os atributos também podem ser constantes, declarados pela palavra final:
+public final int CONTANTE = 10;
+
+constantes devem ser declaradas e inicializadas na mesma linha, e não podem ter o seu valor alterado no programa.
+
+Heranças avançadas e métodos construtor:
+
+quando damos extends (herança) em uma classe que possui um método construtor vazio, não temos nenhum problema, entretanto, se ele possuir parâmetros nesse método construtor, teremos um erro, pois a classe filha não apresentará os parâmetros do construtor da classe pai.
+Para resolver isso, utilizamos o comando super:
+O comando super chama o método construtor da classe pai, caso esse construtor tenha parâmetros, devemos passá-los pelo super. 
+public classefilha(){
+
+super(parametros do metodo pai);
+}
+
+Quando temos duas variáveis com o mesmo nome, uma sendo parâmetro do método, e a outra sendo um atributo da classe, diferenciamos elas por meio da palavra this.
+public a (int var){
+
+this.var = var;
+}
+
+a variavel com o this é o atributo da classe, enquanto a variável var sem nada é o parâmetro passado pelo método 
+
+
+entendendo instanceof e mais conceitos importantes:
+instaceof: usada para verificar se um objeto é uma instância de uma classe:
+
+Player player = new Player();
+Enemy enemy = new Enemy();
+if(player instanceof Player){
+	//isso é verdadeiro
+} else if(enemy instanceof Enemy){
+	//isso é falso
+}
+
+além disso, se criarmos uma classe1 que tem um extends na classe2, podemos fazer a manobra a segir sem erros:
+Classe2 classe2;
+
+classe2 = new Classe1();
+
+isso acontece pois a classe1 é um tipo de classe2 
+
+Isso pode ser usado por uma classe pai inimigo, da qual podemos crir várias classes filhas, e asism identificamos qual é cada uma por meio do instanceof.
+
+Packages e import:
+packages: são conjunto de classes, que geralmente são usadas em um projeto maior
+sua nomenclatura é:
+com.nomedaempresa.tipodopackage
+
+entretanto, quando queremos instanciar classes em packages diferentes, devemos importar esse pacote, ou apenas a classe em si. Fazemos isso por meio do comando import, que é automaticamente preencido pela IDE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

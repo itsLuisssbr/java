@@ -1,0 +1,15 @@
+Lógica dos games:
+a diferença de um jogo para um software comum é que um software lê o seu código, e no final da execução já definiu todas as regras de execução, enquanto isso um jogo possui um gameloop, ou seja, uma repetição do código toda vez, assim ele nunca para a execuão, além disso, ele trabalha com gráficos e lógica ao mesmo tempo, e portanto precisamos de threads, ou seja precisamos executar duas coisas ao mesmo tempo.
+
+Threads: são responsáveis por executar mais de uma ação ao mesmo tempo, nesse caso, um método
+Pra utilizar uma thread, precisamos implementar a interface Runnable, nativa do Java 
+cheque o código para pegar um exemplo de implementação.
+
+Arraylist: é uma array com índices ilimitados, usados por exemplo quando temos um índice indefinido de inimigos. 
+Sua declaração é:
+
+ArrayList<tipodevariavel/objeto> nomedaarraylist
+
+um jogo é composto de diversos objetos, que podem ser personagens, itens, jogos, etc, e eeles são todos armazenados em uma lista. 
+
+

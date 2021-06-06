@@ -1,0 +1,32 @@
+Para criar um projeto no eclipse:
+new -> new project -> java project
+os arquivos de programa estarão na pasta src do projeto 
+algoritmo:
+um programa em java funciona da seguinte forma:
+cada linha de código é executada na ordem em que foi escrita
+Exemplo de algorítimo
+abra a janela do programa
+apareça os botões dos programas
+crie evento de clique
+quando clicar no botão execute tal ação
+Se a vida de meu personagem for menor que 0, reinicie o meu jogo
+
+outro exempo:
+iniciar jogo(abriu a janela do jogo e posicionei o jogador)
+jogador possui 10 de vida, 10 de munição
+inimigos persegue o jogador
+setas para mover o jogado
+10 inimiogos nasceram no mapa{
+colisão com o jogador e inimigo jogador perde 1 de vida
+}
+se o joador ficar com 0 de vida, game over
+
+
+
+
+
+
+
+
+
+

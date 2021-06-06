@@ -1,0 +1,19 @@
+stackoverflow: é um site para procurar questões sobre programação
+
+java lendo input:
+Scanner in = new Scanner(System.in);
+ler uma string:
+String nome = in.nextLine();
+ler um inteiro:
+String nome = in.nextInt();
+
+
+Declarar várias variáveis em uma mesma linha:
+tipo var1, var2, var3...varn;
+
+números aleatórios:
+Random rand = new Random();
+
+rand.nextInt(val): gera um valor aleatório entre 0 e val-1
+
+Para comparar Strings, devemos utilizar a sintaxe string1.equals(string2), em vez de string1 == string2

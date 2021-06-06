@@ -1,0 +1,5 @@
+package packageseimport;
+
+public class tipo1 extends Player{
+
+}

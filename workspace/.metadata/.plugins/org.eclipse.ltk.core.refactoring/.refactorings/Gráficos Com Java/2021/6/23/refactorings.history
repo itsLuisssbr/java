@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;renderizandoeiniciandocombuffers&apos; to &apos;Gráficos Com Java/src&apos;&#x0D;&#x0A;- Original project: &apos;Gráficos Com Java&apos;&#x0D;&#x0A;- Destination element: &apos;Gráficos Com Java/src&apos;&#x0D;&#x0A;- Original element: &apos;Gráficos Com Java/src/renderizandoeiniciandocombuffers&apos;" description="Copy package" destination="/src" element1="/src&lt;renderizandoeiniciandocombuffers" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1622507546238" version="1.0"/>
+</session>

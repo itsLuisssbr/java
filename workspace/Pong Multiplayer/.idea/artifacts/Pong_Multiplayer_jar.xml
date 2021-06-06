@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Pong Multiplayer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Pong_Multiplayer_jar</output-path>
+    <root id="archive" name="Pong Multiplayer.jar">
+      <element id="module-output" name="Pong Multiplayer" />
+    </root>
+  </artifact>
+</component>

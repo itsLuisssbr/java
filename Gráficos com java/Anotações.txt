@@ -1,0 +1,33 @@
+Frame e Canvas:
+ver exemplo no código sobre como criar uma janela.
+
+Game looping profissional:
+		long lastTime = System.nanoTime();
+		double ammountOfTicks = 60.0;
+		double ns = 1000000000/ammountOfTicks;
+		double delta = 0;
+		int frames = 0;
+		double time = System.currentTimeMillis();
+		while(isRunning) {
+			long now = System.nanoTime();
+			delta += (now - lastTime)/ns;
+			lastTime = now;
+			if(delta >= 1) {
+				tick();
+				render();
+				frames++;
+				delta--;
+			}
+			if(System.currentTimeMillis() - time >= 1000) {
+				System.out.println("FPS: " + frames);
+				frames = 0;
+				time += 1000;
+			}
+			
+			
+		}
+
+Renderizando e iniciando com buffers:
+
+
+A aula de renderizando strings está junto com a aula de mais de gráficos e debug. 

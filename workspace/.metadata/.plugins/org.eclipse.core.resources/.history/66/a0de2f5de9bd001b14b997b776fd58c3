@@ -1,0 +1,5 @@
+package tudosobremetodos;
+
+public interface MinhaInterface {
+	public void carregar();
+}

@@ -1,0 +1,133 @@
+para criar um arquivo: criar uma classe
+classe: é um trecho de código que pode ser dividido
+
+O programa a ser executado está dentro da segiuinte estrutra:
+public static void main(String[] args){
+//codigo
+}
+comando para printar na tela: System.out.print(""); / System.out.println("");
+
+Variáveis no java: variáveis são valores que podemos definir e mudar durante a exeção do programa, definimos ela como:
+tipo nome_var = valor;
+entretanto, em java, temos que definir o tipo da variável, que pode ser:
+
+int: número inteiro
+float: número com vírgula
+double: número com dupla precisão
+String: frase
+char: caracter
+boolean: verdadeiro ou falso
+
+A string é armazenada em aspas duplas, enquanto o char é armazenado em aspas simples
+
+Só precisamos declarar a variável uma vez.
+
+concatenar variáveis em print:
+System.out.println("string" + var);
+
+Constantes:
+são variáveis que não podem ser alteradas uma vez declaradas, assim portanto ela deve ser declarada e ter um valor atribuído a ela na mesma linha.
+Sintaxe:
+final tipo var = valor;
+
+lembrando que as vriáveis/consts não podem iniciar com números, apresentar caracteres especiais e espaços.
+Arrays:
+Arrays são variáveis/listas que armazenam vários valores dentro de um mesmo nome, mas com índices diferentes. Em java, ela é declarada assim:
+tipo[] var = new tipo[n];
+e a array terá entre 0 a n - 1 índices. 
+Elas também podem ser multidimensionais, apresentando mais de um índice, como no exmeplo a seguir:
+String[][] nome = new String[i][j];
+
+Condições:
+Elas são usadas para realizar comandos apenas se algumas condições forem satisfeitas, elas são escritas da seguitne forma:
+if(condição){
+comandos
+}
+
+Executa os comandos apenas se a condição for verdadeira
+
+else{
+comandos
+}
+Executa os comandos se as condições superiores não forem satisfeitas.
+
+else if(condição){
+comandos
+}
+caso uma condição superior não seja satisfeita, essa nova condição é checada.
+
+A presença de um else não é obrigatória, entretanto, para que um else ou else if existirem, deve existir um if precendo eles. 
+
+Quando temos apenas uma linha de código após uma condição, as chaves não são obrigatórias.
+
+Operadores condicionais:
+==: igual
+.equals(string): usado para comparar a igualdade de Strings
+>: maior que
+<: menor que
+>=: maior ou igual que
+<=: menor ou igual que
+!=: diferente de
+!: oposto de
+
+Switch e case:
+uma outra forma de estabelecer condições sobre uma variável. Substituí a escada de ifs e else ifs
+Sintaxe:
+switch(var){
+case valor:
+codigo
+break;
+case valor2:
+codigo2
+break
+default:
+codigo executado se nenhuma condição for satisfeita
+break;
+}
+
+Operações avançadas e operações matemáticas:
+elas podem ser efetuadas em qualquer lugar, em uma variável, dentro do método println, etc.
+operadores matemáticos:
++: soma
+-: subtração
+++:incremento (em 1)
+--: decremento (em -1)
++=val: incremento em val
+
+&&: operador 'e' da matemática, usado dentro de condiçoes ou em variáveis boolean
+||: operador 'ou' da matemática, usado dentro de condições ou variáveis boolean
+A ordem das operações na linguagem não respeita a ordem padrão na matemática, assim precisamos utilizar () para priorizar certo cálculo
+
+Loopings: loopins são usados para executar certo comandos repetidas vezes sem repetir o mesmo código. Existem vários tipos deles:
+
+while(condição){
+código
+}
+executa o código enquanto a condição for verdadeira
+
+for(int var = valor; valor < vezes; valor++){
+código
+}
+executa o código enquanto a condição central for verdadeira.
+
+do{
+código
+}while(condição);
+é similar ao while(), entretanto ele executa o código primeiro antes de fazer a verificação
+
+Importando projetos no Eclipse: para importar projetos no eclipse, achamos a pasta do workspace pelo explorador de arquivos, colamos o projeto, e então criamos um projeto no eclipse com o mesmo nome, assim o programa assimilará automaticamente o projeto.
+
+Revisando programação e lógica com quadro:
+Condição: vereficação de uma condição, e se caso ela for verdadeira, fazer algo, e caso falsa, fazer outra coisa
+
+laços de repetição: repetem um trecho de código enquanto uma condição for verdadeira
+
+
+
+
+
+
+
+
+
+

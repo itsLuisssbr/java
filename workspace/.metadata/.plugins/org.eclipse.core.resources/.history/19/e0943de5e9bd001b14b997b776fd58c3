@@ -1,0 +1,11 @@
+package tudosobremetodos;
+
+public class Main {
+		//TODO fredoca
+		public static void main(String[] args) {
+			Player player = new Player();
+			Enemy enemy = new Enemy();
+			
+		}
+		
+}

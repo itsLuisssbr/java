@@ -1,0 +1,15 @@
+package tudosobremetodos;
+
+public class Main {
+		//TODO fredoca
+		public static void main(String[] args) {
+			Player player = new Player();
+			Player2 player2 = new Player2();
+			Enemy enemy = new Enemy();
+			player.nascer();
+			player2.nascer();
+			
+			
+		}
+		
+}

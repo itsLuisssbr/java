@@ -1,0 +1,21 @@
+package threadseloopings;
+
+import java.util.Scanner;
+
+public class testetry {
+	//static int x;
+
+	public static void main(String[] args) {
+		int x;
+		Exception e = new Exception();
+		Scanner in = new Scanner(System.in);
+		x = in.nextInt();
+		//try {
+			int y = 1/x;
+			System.out.println(y);
+		//}
+		//catch(Exception e) {
+		//	System.out.println("Valor indefinido");
+		//}
+	}
+}

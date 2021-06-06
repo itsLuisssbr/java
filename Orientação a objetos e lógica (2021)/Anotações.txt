@@ -1,0 +1,16 @@
+Esse é um módulo de revisão, assim não abordarei nada que foi abordado antes
+
+Hello World e testando ambiente:
+
+Descomplicando variáveis:
+variaveis possuem diversos tipos
+Desplicando condições:
+
+Decomplicando laços de repetição:
+
+Classes e métodos de forma fácil:
+
+Importância das heranças:
+no desenvolvimento, podemos utilizar heranças, onde colocamos os atributos e métodos em uma classe pai, que depois pode ser usadas em classes filhas, por meio do extends, e essa classe filha irá ganhas todos os atributos e métodos da classe pai.
+Listas em java:
+arraylists são listas para organizar objeots e va´iáveis de uma forma eficiente, já que diferente de vetores, elas não possuem um valor pré-determinado.
